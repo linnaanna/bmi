@@ -72,4 +72,25 @@ function beer(bottles) {
         console.log(bottles + " bottle of beer on the wall, " + bottles + " bottle of beer. Take one down and pass it around, no more bottles of beer on the wall."); 
         }
 }
+************************************************************************
+// Fibonacci Generator
 
+function fibonacciGenerator (n) {
+
+var output = [];
+
+ for (var count = 0; count <= n - 1; count++){
+
+   if (count === 0){
+       output.push (0);
+   }
+   else if (count === 1){
+     output.push (1);
+    
+   }else{
+     output.push (output [count - 1] + output [count - 2]);
+   }
+
+ }
+console.log (output);
+}
